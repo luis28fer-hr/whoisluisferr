@@ -67,6 +67,7 @@ nav h5:hover {
 }
 
 nav h5 span {
+    color: #00f3ff;
     transition: all 0.4s ease;
 
 }
