@@ -1,0 +1,313 @@
+.servicios {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    min-height: 105vh;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 -2px 20px 1px rgb(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 5rem 0 5rem 0;
+    gap: 1rem;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.servicios h3 {
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
+
+.servicios .container-services {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.container-services .container-habilidades {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0.7rem;
+}
+
+.container-habilidades, .container-especialidades p {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.container-habilidades .habilidades {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0.8rem 0rem 0;
+    border-top: 2px solid #000000de;
+    gap: .5rem;
+    margin-bottom: 0.2rem;
+}
+
+.container-habilidades .habilidades h3 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-habilidades .habilidades h3 i {
+    rotate: 180deg;
+    color: #000000d0;
+
+}
+
+.container-habilidades .habilidades h3 i:hover {
+    cursor: pointer;
+}
+
+.container-habilidades .habilidades ul {
+    width: 95%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container-habilidades .habilidades .content.active {
+    position: static;
+    opacity: 1;
+    z-index: 10;
+}
+
+.container-habilidades .habilidades ul li {
+    display: inline-block;
+    margin-right: 0.22rem;
+    margin-bottom: 0.43rem;
+    background-color: #000;
+    border-radius: 36px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.4s ease-in;
+}
+
+.container-habilidades .habilidades ul li:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 2px rgb(0, 0, 0, 0.25);
+    transform: scale(1.05);
+}
+
+
+.container-services .container-especialidades {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+
+.container-especialidades .especialidades {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.container-especialidades .especialidades h2 {
+    width: 100%;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    border-bottom: 2px solid #000000de;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.container-especialidades .especialidades p {
+    width: 95%;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.container-especialidades .especialidades .content.active {
+    position: static;
+    opacity: 1;
+    z-index: 10;
+}
+
+
+.container-especialidades .especialidades h2 i {
+    font-size: 1.15rem;
+    rotate: 180deg;
+    color: #000000be;
+    transition: all .3s ease;
+
+}
+
+.container-especialidades .especialidades h2 i:hover {
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 480px) {
+    .servicios {
+        min-height: 80vh;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        padding: 3.5rem 1rem 4rem 1.1rem;
+        gap: 0.8rem;
+    }
+
+    .servicios h3 {
+        width: 80%;
+        font-size: 2rem;
+        font-weight: 400;
+
+    }
+
+    .servicios .container-services {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .container-services .container-habilidades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 0.7rem;
+    }
+
+    .container-habilidades, .container-especialidades p {
+        width: 100%;
+        font-size: 1.9rem;
+        font-weight: 400;
+    }
+
+    .container-habilidades .habilidades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 0.8rem 0rem 0;
+        border-top: 1px solid #000000de;
+        gap: .5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .container-habilidades .habilidades h3 {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container-habilidades .habilidades h3 i {
+        rotate: 180deg;
+        color: #000000d0;
+
+    }
+
+    .container-habilidades .habilidades h3 i:hover {
+        cursor: pointer;
+    }
+
+    .container-habilidades .habilidades ul {
+        width: 95%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .container-habilidades .habilidades .content.active {
+        position: static;
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .container-habilidades .habilidades ul li {
+        display: inline-block;
+        margin-right: 0.22rem;
+        margin-bottom: 0.43rem;
+        background-color: #000;
+        border-radius: 36px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0.6rem 1.2rem;
+        transition: all 0.4s ease-in;
+    }
+
+    .container-habilidades .habilidades ul li:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 8px 2px rgb(0, 0, 0, 0.25);
+        transform: scale(1.05);
+    }
+
+
+    .container-services .container-especialidades {
+        width: 100%;
+        gap: 0.7rem;
+    }
+
+
+    .container-especialidades .especialidades {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .container-especialidades .especialidades h2 {
+        width: 100%;
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #000000de;
+    }
+
+    .container-especialidades .especialidades p {
+        width: 95%;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 300;
+        position: absolute;
+        opacity: 0;
+        z-index: 0;
+    }
+
+
+    .container-especialidades .especialidades h2 i {
+        font-size: 1rem;
+    }
+
+}

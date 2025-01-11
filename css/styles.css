@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    font-family: 'ClashDisplay', 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*::selection {
+    background-color: rgba(58, 255, 239, 0.514);
+}
+
+main {
+    background-color: #F5F5F5;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
+    z-index: 100;
+    backdrop-filter: blur(1.8px);
+    /* Desenfoque de 10px */
+
+}
+
+nav {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 10vh;
+    border-radius: 36px;
+    padding: 0 1.5rem;
+    box-shadow: 0 3px 15px 3px rgb(0, 0, 0, 0.05);
+
+}
+
+nav h5 {
+    color: black;
+    font-size: 1.35rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+nav h5:hover {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+nav h5 span {
+    transition: all 0.4s ease;
+
+}
+
+nav h5:hover span {
+    color: #00f3ff;
+    transform: scale(1.25);
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+nav ul li {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.4s ease;
+
+
+}
+
+nav ul li:hover {
+    font-weight: 500;
+    transform: translateY(2px);
+
+}
+
+
+nav .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    gap: 0.5rem;
+}
+
+nav .cta .cv {
+    padding: .7rem 0.9rem;
+    border-radius: 36px;
+    border: solid 2px rgba(0, 0, 0, 0.95);
+    color: rgba(0, 0, 0, 0.95);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.4s ease;
+
+}
+
+nav .cta .cv:hover {
+    background-color: black;
+    color: black;
+    cursor: pointer;
+    color: white;
+    transform: translateY(3px);
+
+}
+
+nav .cta .hablamos {
+    padding: .75rem 0.9rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-radius: 36px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.4s ease;
+
+}
+
+nav .cta .hablamos:hover {
+    background-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-weight: 600;
+    transform: translateY(3px);
+}
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+footer div {
+    padding: 0.5rem 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border-top: solid 2px #000;
+}
+
+footer div span {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+footer div a {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+footer div a:hover {
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        width: 100%;
+        height: 8vh;
+        backdrop-filter: blur(1.8px);
+    }
+
+    nav {
+        background-color: #ffF;
+        width: 89%;
+        height: 6vh;
+        padding: 0 1.3rem;
+    }
+
+    nav h5 {
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+
+
+    nav h5:hover span {
+        transform: scale(1.2);
+    }
+
+    nav ul {
+        z-index: -1;
+        position: absolute;
+        opacity: 0;
+        gap: 0.1rem;
+    }
+
+    nav ul li {
+        font-size: 0rem;
+    }
+
+    nav .cta {
+        height: 70%;
+        gap: 0.25rem;
+    }
+
+    nav .cta .cv {
+        padding: .5rem 0.7rem;
+        border-radius: 32px;
+        color: rgba(0, 0, 0, 0.95);
+        font-size: 0.78rem;
+    }
+
+    nav .cta .cv:hover {
+        transform: translateY(2px);
+    }
+
+    nav .cta .hablamos {
+        padding: .55rem 0.72rem;
+        border-radius: 32px;
+        font-size: 0.8rem;
+    }
+
+    nav .cta .hablamos:hover {
+        background-color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+        font-weight: 600;
+        transform: translateY(3px);
+    }
+
+    footer {
+        width: 100%;
+        height: 35vh;
+        gap: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    footer div {
+        padding: 0.6rem 0;
+        width: 60%;
+        align-items: center;
+        justify-content: start;
+        border-top: solid 1px #000;
+    }
+
+    footer div span {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0.4rem;
+    }
+
+    footer div a {
+        font-size: 0.95rem;
+        color: #000;
+        font-weight: 400;
+        transition: all 0.3s ease;
+    }
+
+    footer div a:hover {
+        font-weight: 500;
+    }
+
+}

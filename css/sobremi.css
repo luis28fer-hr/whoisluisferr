@@ -1,0 +1,260 @@
+.home {
+    width: 100%;
+    height: 110vh;
+    color: #fff;
+    background-color: #000;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 6.5rem;
+    box-shadow: 0 6px 12px 3px rgb(0, 0, 0, 0.2);
+    z-index: 20;
+
+}
+
+.home .presentacion {
+    width: 55%;
+}
+
+.home .presentacion .img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transition: all 0.4s ease-in;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .presentacion .img img {
+    width: 100%;
+    height: 150%;
+    object-position: 50% -.2rem;
+    object-fit: cover;
+    transition: all 0.4s ease-in;
+}
+
+.home .presentacion .img img:hover {
+    cursor: pointer;
+    width: 300%;
+    height: 350%;
+    object-position: 50% -.2rem;
+    object-fit: cover;
+
+
+}
+
+
+.home .presentacion p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+.home .presentacion h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: 0px;
+}
+
+
+.home .descripcion {
+    width: 40%;
+    color: #fbfcfc;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+}
+
+.sobremi {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.sobremi ul {
+    width: 60%;
+    height: 42%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100%);
+    gap: 0.65rem;
+}
+
+.sobremi ul li {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+}
+
+
+.sobremi ul li:hover {
+    transform: scale(1.025) translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 6px 12px 3px rgb(0, 0, 0, 0.15);
+}
+
+.sobremi ul li:hover i {
+    animation: rotateIcon 3s infinite linear;
+    transform: rotateX('angle');
+}
+
+/* Keyframes para la animación */
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+        /* Comienza en 0° */
+    }
+
+    25% {
+        transform: rotate(35deg);
+        /* Rota a 45° */
+    }
+
+    50% {
+        transform: rotate(0deg);
+        /* Regresa a 0° */
+    }
+
+    75% {
+        transform: rotate(-35deg);
+        /* Rota a -45° */
+    }
+
+    100% {
+        transform: rotate(0deg);
+        /* Vuelve a 0° */
+    }
+}
+
+.sobremi ul li i {
+    font-size: 2rem;
+    transition: all 0.5s linear;
+}
+
+.sobremi ul li:hover p {
+    font-weight: 400;
+    transition: all 0.5s linear;
+
+}
+
+.sobremi ul li p {
+
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.sobremi ul li .old {
+    display: flex;
+    gap: .1rem;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .home {
+        width: 100%;
+        height: 90vh;
+        color: #fff;
+        border-radius: 0 0 50px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 0.8rem;
+        padding-left: 1.2rem;
+        padding-bottom: 6.5rem;
+
+    }
+
+    .home .presentacion {
+        width: 95%;
+    }
+
+    .home .presentacion .img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+    .home .presentacion p {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .home .presentacion h1 {
+        font-size: 2.1rem;
+        line-height: 2.1rem;
+    }
+
+
+    .home .descripcion {
+        width: 90%;
+        color: #fbfcfc;
+    }
+
+    .descripcion p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .sobremi {
+        height: 30vh;
+    }    
+    .sobremi ul {
+        width: 85%;
+        height: 60%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        gap: 0.5rem;
+    }
+    
+    .sobremi ul li {
+        gap: 0.5rem;
+        border-radius: 16px;
+    }
+    
+    
+    .sobremi ul li:hover {
+        transform: scale(1.025) translateY(-3px);
+        box-shadow: 0 4px 8px 1px rgb(0, 0, 0, 0.05);
+    }
+    
+    .sobremi ul li i {
+        font-size: 1.7rem;
+    }
+    
+    .sobremi ul li:hover p {
+        font-weight: 400;
+    
+    }
+    
+    .sobremi ul li p {
+    
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    .sobremi ul li .old {
+        display: flex;
+        gap: .2rem;
+    }
+    
+}

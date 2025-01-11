@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whoisluisfer</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/sobremi.css">
+    <link rel="stylesheet" href="/css/servicios.css">
+    <link rel="stylesheet" href="/css/proyectos.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h5><span>.</span>whoisluisfer</h5>
+            <ul>
+                <li>Sobre mi</li>
+                <li>Servicios</li>
+                <li>Proyectos</li>
+            </ul>
+            <div class="cta">
+                <a class="cv" href="/cv.pdf" target="_blank">C.V.</a>
+                <a class="hablamos" onclick="enviarMensaje()">¿Hablamos?</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="presentacion">
+                <div class="img"><img src="/img/fotodeperfil.jpeg" alt="Foto de perfi"></div>
+                <p>Hola soy Luis Fer,</p>
+                <h1>ingeniero en sistemas computacionales.</h1>
+            </div>
+            <div class="descripcion">
+                <p>Apasionado por la tecnología y la innovación, con habilidades en programación, diseño, desarrollo y
+                    tecnologías de la información (TI).</p>
+            </div>
+        </section>
+        <section class="sobremi">
+            <ul>
+                <li><i class="fa-solid fa-cake-candles"></i>
+                    <p>28/05/2002</p>
+                </li>
+                <li>
+                    <div class="old"><i class="fa-solid fa-2"> </i> <i class="fa-solid fa-2"></i></div>
+                    <p>Años</p>
+                </li>
+                <li><i class="fa-solid fa-map-location-dot"></i>
+                    <p>Querétaro</p>
+                </li>
+                <li><i class="fa-solid fa-person"></i>
+                    <p>Hombre</p>
+                </li>
+                <li><i class="fa-solid fa-heart-circle-check"></i>
+                    <p>Soltero</p>
+                </li>
+            </ul>
+        </section>
+        <section class="servicios">
+            <h3>Servicios Profesionales</h3>
+            <div class="container-services">
+                <div class="container-habilidades">
+                    <p>Habilidades</p>
+                    <div class="habilidades" id="habilidad-desarrollo">
+                        <h3>Desarollo web <i class="fa-solid fa-chevron-up"
+                                onclick="toggleHabilidad('habilidad-desarrollo')"></i></h3>
+                        <ul class="content">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Figma</li>
+                            <li>Laravel</li>
+                            <li>React</li>
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="habilidades" id="habilidad-soporte">
+                        <h3>Soporte técnico / TI <i class="fa-solid fa-chevron-up"
+                                onclick="toggleHabilidad('habilidad-soporte')"></i></h3>
+                        <ul class="content">
+                            <li>Administración de sistemas y redes</li>
+                            <li>Mantenimiento de Equipos</li>
+                            <li>Seguridad</li>
+                            <li>Soporte remoto</li>
+                            <li>Soporte 1er nivel</li>
+                            <li>Soporte 2° nivel</li>
+                            <li>Instalación de equipos</li>
+                            <li>Problemas técnicos</li>
+                            <li>Servidores</li>
+                        </ul>
+                    </div>
+                    <div class="habilidades" id="habilidad-blanda">
+                        <h3>Competencias sociales <i class="fa-solid fa-chevron-up"
+                                onclick="toggleHabilidad('habilidad-blanda')"></i></h3>
+                        <ul class="content">
+                            <li>Trabajo colaborativo</li>
+                            <li>Flexibilidad</li>
+                            <li>Comunicación asertiva</li>
+                            <li>Adaptavilidad</li>
+                            <li>Innovación</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-especialidades">
+                    <div class="especialidades" id="servicio-diseño">
+                        <h2>Diseño UX/UI <i class="fa-solid fa-chevron-up"
+                                onclick="toggleEspecialidad('servicio-diseño')"></i></h1>
+                            <p class="content">
+                                Experiencia en la creación de interfaces intuitivas y atractivas 
+                                que mejoran la experiencia del usuario.
+                            </p>
+                            <p class="content">
+                                Integro principios de diseño centrado en el usuario para desarrollar interfaces modernas, 
+                                responsivas y visualmente impactantes. Mi objetivo es garantizar que cada proyecto transmita 
+                                identidad, funcionalidad y una navegación fluida en dispositivos móviles, tabletas y escritorios.
+                            </p>
+                    </div>
+                    <div class="especialidades" id="servicio-desarrollo">
+                        <h2>Desarrollo web <i class="fa-solid fa-chevron-up"
+                                onclick="toggleEspecialidad('servicio-desarrollo')"></i></h1>
+                            <p class="content">
+                                Desarrollo y diseño de sitios web, páginas web, landing pages, portafolios y sitios personalizados 
+                                con HTML, CSS y JavaScript para crear proyectos altamente funcionales, interactivos 
+                                y visualmente atractivos.
+                            </p>
+                            <p class="content">
+                                Cuento con experiencia en la creación de sitios completamente responsivos, garantizando una 
+                                tabletas y escritorios. Además, ofrecemos desarrollos personalizados enfocados en maximizar 
+                                la calidad y los resultados.
+                            </p>
+                    </div>
+                    <div class="especialidades" id="servicio-soporte">
+                        <h2>Soporte TI <i class="fa-solid fa-chevron-up"
+                                onclick="toggleEspecialidad('servicio-soporte')"></i></h1>
+                            <p class="content">
+                                Experiencia en la administración de sistemas y redes, mantenimiento y optimización 
+                                de equipos de cómputo. Domino la configuración y gestión de servidores, 
+                                garantizando su correcto funcionamiento y seguridad.
+                            </p>
+                            <p class="content">
+                                Ofrezco soporte técnico de primer y segundo nivel, tanto de forma remota como presencial, 
+                                resolviendo problemas técnicos de hardware y software de manera eficiente.
+                            </p>
+                            <p class="content">
+                                Mi enfoque incluye soluciones personalizadas que maximizan la estabilidad, 
+                                seguridad y rendimiento del entorno tecnológico.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="proyectos">
+            <h3>Proyectos</h3>
+            <div class="container-proyectos">
+                <div class="card">
+                    <div class="imgcard">
+                        <img src="/img/1.svg" alt="LizVelvet">
+                    </div>
+                    <div class="descard">
+                        <h5>LizVelvet | Landing Page</h5>
+                    </div>
+                    <div class="optcard">
+                        <a href="https://lizvelvet.netlify.app/" target="_blank"><i class="fa-solid fa-share-from-square"></i> Visitar sitio</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgcard">
+                        <img src="/img/agenda_tareas.svg" alt="Agenda Tareas">
+                    </div>
+                    <div class="descard">
+                        <h5>Agenda | Aplicación web</h5>
+                    </div>
+                    <div class="optcard">
+                        <a href="https://app-agenda-tareas.netlify.app/" target="_blank"><i class="fa-solid fa-share-from-square"></i> Visitar sitio</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="contact">
+            <h4>Seremos lo que podamos ser y lo haremos bien.</h4>
+            <div class="btn-contacts">
+                <a onclick="enviarMensaje()" class="uno">Hablamos por whatsapp</a>
+                <a href="" target="_blank" class="dos">Escribeme un correo.</a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <span>Instagram</span>
+            <a href="">whoisluisfer</a>
+            <a href="">_technosolutionss</a>
+        </div>
+        <div>
+            <span>Linkedln</span>
+            <a href="">Luis Fernando Hernandez</a>
+        </div>
+        <div>
+            <span>Facebook</span>
+            <a href="">Luis Fer Hernandez</a>
+        </div>
+    </footer>
+    <script defer src="/js/services.js"></script>
+    <script defer src="/js/cta.js"></script>
+
+</body>
+
+</html>
