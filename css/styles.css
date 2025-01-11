@@ -20,6 +20,10 @@ html {
     background-color: rgba(58, 255, 239, 0.514);
 }
 
+body{
+    background-color: #fff;
+}
+
 main {
     background-color: #F5F5F5;
 }
