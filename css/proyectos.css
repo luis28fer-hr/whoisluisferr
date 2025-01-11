@@ -33,10 +33,6 @@
     color: #fff;
 }
 
-.proyectos .container-proyectos .card:hover .imgcard img {
-    animation: widthimg 3s infinite linear;
-}
-
 /* Keyframes para la animación */
 @keyframes widthimg {
     0% {
@@ -45,7 +41,7 @@
     }
 
     50% {
-        transform: scale(1.05);
+        transform: scale(1.04);
         /* Regresa a 0° */
     }
 
@@ -71,6 +67,8 @@
     object-fit: cover;
     object-position: 50% -1.5rem;
     transition: all 0.5s ease;
+    animation: widthimg 4s infinite linear;
+
 }
 
 .proyectos .container-proyectos .card .descard {
@@ -119,7 +117,7 @@
 
 @media screen and (max-width: 480px) {
     .proyectos {
-        min-height: 125vh;
+        min-height: 190vh;
         height: auto;
         padding: 15vh 0 2rem 0;
         gap: 1rem;

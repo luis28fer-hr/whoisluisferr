@@ -177,7 +177,7 @@
 
 @media screen and (max-width: 480px) {
     .servicios {
-        min-height: 80vh;
+        min-height: 95vh;
         display: flex;
         align-items: start;
         justify-content: start;
