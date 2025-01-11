@@ -179,7 +179,7 @@
         justify-content: end;
         gap: 0.8rem;
         padding-left: 1.2rem;
-        padding-bottom: 5.5rem;
+        padding-bottom: 6rem;
 
     }
 
@@ -188,8 +188,8 @@
     }
 
     .home .presentacion .img {
-        width: 10rem;
-        height: 10rem;
+        width: 7rem;
+        height: 7rem;
     }
     .home .presentacion .img img {
         width: 300%;

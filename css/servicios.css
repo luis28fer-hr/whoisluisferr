@@ -250,6 +250,7 @@
         z-index: -1;
         opacity: 0;
     }
+    
 
     .container-habilidades .habilidades .content.active {
         position: static;
@@ -258,22 +259,16 @@
     }
 
     .container-habilidades .habilidades ul li {
-        display: inline-block;
-        margin-right: 0.22rem;
-        margin-bottom: 0.43rem;
-        background-color: #000;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
         border-radius: 36px;
-        color: #fff;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 400;
-        padding: 0.6rem 1.2rem;
-        transition: all 0.4s ease-in;
+        padding: 0.45rem 1rem;
     }
 
     .container-habilidades .habilidades ul li:hover {
-        cursor: pointer;
-        box-shadow: 0 4px 8px 2px rgb(0, 0, 0, 0.25);
-        transform: scale(1.05);
+        transform: scale(1.03);
     }
 
 
