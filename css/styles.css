@@ -97,6 +97,7 @@ nav ul li {
 nav ul li:hover {
     font-weight: 500;
     transform: translateY(2px);
+    cursor: pointer;
 
 }
 
