@@ -29,9 +29,9 @@
 }
 
 .home .presentacion .img img {
-    width: 100%;
-    height: 150%;
-    object-position: 50% -.2rem;
+    width: 250%;
+    height: 450%;
+    object-position: 50% -.2.5rem;
     object-fit: cover;
     transition: all 0.4s ease-in;
 }
@@ -76,7 +76,7 @@
 
 .sobremi {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,11 +84,10 @@
 }
 
 .sobremi ul {
-    width: 60%;
-    height: 42%;
+    width: 55%;
+    height: 70%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 100%);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.65rem;
 }
 
@@ -144,12 +143,12 @@
 }
 
 .sobremi ul li i {
-    font-size: 2rem;
+    font-size: 2.7rem;
     transition: all 0.5s linear;
 }
 
 .sobremi ul li:hover p {
-    font-weight: 400;
+    font-weight: 500;
     transition: all 0.5s linear;
 
 }
@@ -157,7 +156,7 @@
 .sobremi ul li p {
 
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .sobremi ul li .old {
@@ -229,7 +228,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 50%);
-        gap: 0.5rem;
+        gap: 0.5rem;    
     }
     
     .sobremi ul li {
