@@ -26,6 +26,7 @@ body{
 
 main {
     background-color: #F5F5F5;
+    overflow-x: hidden;
 }
 
 header {
@@ -37,6 +38,7 @@ header {
     height: 12vh;
     z-index: 100;
     backdrop-filter: blur(1.8px);
+    overflow: hidden;
     /* Desenfoque de 10px */
 
 }
@@ -51,6 +53,7 @@ nav {
     border-radius: 36px;
     padding: 0 1.5rem;
     box-shadow: 0 3px 15px 3px rgb(0, 0, 0, 0.05);
+    overflow: hidden;
 
 }
 

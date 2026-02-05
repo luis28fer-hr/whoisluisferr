@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: start;
     gap: 1.5rem;
+    overflow: hidden;
 }
 
 .proyectos h3 {
